@@ -1,0 +1,10 @@
+#################
+## Directories
+#################
+
+node_modules/
+my-app/
+output/
+build
+*.tgz
+bin

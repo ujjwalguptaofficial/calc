@@ -1,0 +1,44 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "App generator for fortjs",
+  "main": "./dist/app.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "commander": "^2.20.0",
+    "inquirer": "^6.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^11.15.12",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.17.0",
+    "typescript": "^3.4.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "buildpack": "npm run deploy && npm pack",
+    "deploy": "NODE_ENV=production npm run build",
+    "build:install": "npm run buildpack && sudo npm i fort-creator-1.2.1.tgz -g"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ujjwalguptaofficial/calc.git"
+  },
+  "keywords": [
+    "fort",
+    "fortjs",
+    "generator",
+    "creator",
+    "cli",
+    "tool"
+  ],
+  "author": "Ujjwal Gupta",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ujjwalguptaofficial/fort-creator/issues"
+  },
+  "homepage": "https://github.com/ujjwalguptaofficial/fort-creator#readme"
+}
