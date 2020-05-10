@@ -1,8 +1,7 @@
-import { evaluate } from "./calculator";
+import { evaluate } from "mathjs";
 
 const expression = process.argv[2];
-console.log("argv", process.argv);
-
 if (expression) {
+    console.log(`expression '${expression}'`)
     console.log(evaluate(expression));
 }
